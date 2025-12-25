@@ -54,7 +54,7 @@ def run_benchmarks(demo=True):
     for trial in range(N_trials):
         print(f'Trial {trial+1}/{N_trials}')
         for scenario, func in enumerate(functions):
-            print(f'  Scenario {scenario+1}: {func.label}')
+            print(f'  Scenario {scenario+1}')
 
             # Sample test set covariates and response
             X_test = np.random.random(size=(N_test,func.n_in))
