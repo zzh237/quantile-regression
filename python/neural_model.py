@@ -263,7 +263,7 @@ def fit_quantiles(X, y, quantiles=0.5, lossfn = 'marginal',
 
     # Load the best model and clean up the checkpoints
     if file_checkpoints:
-        model = torch.load(tmp_file)
+        model = torch.load(tmp_file, weights_only=False)
         os.remove(tmp_file)
     else:
         import pickle
