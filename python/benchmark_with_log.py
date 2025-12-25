@@ -11,7 +11,7 @@ from funcs import Sanity, Scenario1, Scenario2, Scenario3, Scenario4, Scenario5,
 from neural_sqerr import SqErrNetwork
 from neural_model import QuantileNetwork
 from spline_model import QuantileSpline
-from forest_model import QuantileForest
+# from forest_model import QuantileForest
 from visualize import heatmap_from_points
 
 # Simple logger
